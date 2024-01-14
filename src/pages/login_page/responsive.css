@@ -1,0 +1,204 @@
+
+@media(max-width:1024px)
+{
+    .loginPage .loginCon{
+        min-width:300px;
+        width: 350px;
+    }
+    .loginCon .headingBox>*{
+        padding:1.5vmax 0vmax;
+        font-size: 1.5vmax;
+    }
+    .loginCon .border{
+        border:1px solid rgb(102, 102, 102);
+    }
+    .loginCon form{
+        padding: 4vmax;
+    }
+    .loginCon form>*{
+        margin-bottom: 2.8vmax;
+    }
+    .loginCon form label .input{
+        padding: 1vmax 4vmax;
+        font-size: 1.4vmax;
+    }
+    .loginCon form label .icon{
+        font-size: 2vmax;
+        left:1vmax;
+    }
+    .loginCon form label .key {
+        font-size: 2vmax;
+    }
+    .loginCon form a{
+        font-size: 1.1vmax;
+    }
+    .loginCon form input[type=submit]
+    {
+        padding:0.7vmax;
+        font-size: 1.3vmax;
+    }
+    form .gbox div,form .fbox div{
+        padding: 0.5vmax;
+        padding-left: 10%;
+        gap: 1vmax;
+        justify-content: center;
+        width: 90%;
+    }
+    form .gbox img,form .fbox img{
+        width: 20px;
+        height: 20px;
+    } 
+    form .gbox,form .fbox{
+        padding: 0.1vmax;
+    }
+    form .uploadBox div:first-child{
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        margin-bottom: 0px;
+    }
+    form .uploadBox div:last-child span{
+        font-size: 1.5vmax;
+    }
+    form .gbox span,form .fbox span{
+        font-size:1.2vmax;
+    }
+
+}@media(max-width:768px)
+{
+    .loginPage .loginCon{
+        min-width:300px;
+        width: 350px;
+    }
+    .loginCon .headingBox>*{
+        padding:1.5vmax 0vmax;
+        font-size: 1.5vmax;
+    }
+    .loginCon .border{
+        border:1px solid rgb(102, 102, 102);
+    }
+    .loginCon form{
+        padding: 4vmax;
+    }
+    .loginCon form>*{
+        margin-bottom: 2.8vmax;
+    }
+    .loginCon form label .input{
+        padding: 1vmax 4vmax;
+        font-size: 1.4vmax;
+    }
+    .loginCon form label .icon{
+        font-size: 2vmax;
+        left:1vmax;
+    }
+    .loginCon form label .key {
+        font-size: 2vmax;
+    }
+    .loginCon form a{
+        font-size: 1.1vmax;
+    }
+    .loginCon form input[type=submit]
+    {
+        padding:0.7vmax;
+        font-size: 1.3vmax;
+    }
+    form .gbox div,form .fbox div{
+        padding: 0.5vmax;
+        padding-left: 10%;
+        gap: 1vmax;
+        justify-content: center;
+    }
+    form .gbox img,form .fbox img{
+        width: 20px;
+        height: 20px;
+    } 
+    form .gbox,form .fbox{
+        padding: 0.1vmax;
+    }
+    form .uploadBox div:first-child{
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        margin-bottom: 0px;
+    }
+    form .uploadBox div:last-child span{
+        font-size: 1.5vmax;
+    }
+    form .gbox span,form .fbox span{
+        font-size:1.2vmax;
+    }
+
+}
+
+
+@media(max-width:768px)
+{
+    .loginPage .loginCon{
+        min-width:300px;
+        width: 350px;
+    }
+    .loginCon .headingBox>*{
+        padding:1.5vmax 0vmax;
+        font-size: 1.5vmax;
+    }
+    .loginCon .border{
+        border:1px solid rgb(102, 102, 102);
+    }
+    .loginCon form{
+        padding: 4vmax;
+    }
+    .loginCon form>*{
+        margin-bottom: 2.8vmax;
+    }
+    .loginCon form label .input{
+        padding: 1vmax 4vmax;
+        font-size: 1.4vmax;
+    }
+    .loginCon form label .icon{
+        font-size: 2vmax;
+        left:1vmax;
+    }
+    .loginCon form label .key {
+        font-size: 2vmax;
+    }
+    .loginCon form a{
+        font-size: 1.1vmax;
+    }
+    .loginCon form input[type=submit]
+    {
+        padding:0.7vmax;
+        font-size: 1.3vmax;
+    }
+    form .gbox div,form .fbox div{
+        padding: 0.5vmax;
+        padding-left: 10%;
+        gap: 1vmax;
+        justify-content: center;
+    }
+    form .gbox img,form .fbox img{
+        width: 20px;
+        height: 20px;
+    } 
+    form .gbox,form .fbox{
+        padding: 0.1vmax;
+    }
+    form .uploadBox div:first-child{
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        margin-bottom: 0px;
+    }
+    form .uploadBox div:last-child span{
+        font-size: 1.5vmax;
+    }
+    form .gbox span,form .fbox span{
+        font-size:1.2vmax;
+    }
+
+}
+@media(max-width:300px)
+{
+    .loginPage .loginCon{
+        min-width: 100%;
+    }
+}

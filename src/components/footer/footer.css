@@ -1,0 +1,63 @@
+footer{
+    width: 100%;
+    padding: 2vmax;
+    display: flex;
+    background-color: black;
+}
+footer .ulCon{
+    width: 25%;
+}
+footer .ulCon ul{
+    list-style: none;
+    width: fit-content;
+    margin: 0 auto;
+}
+footer ul a{
+    text-decoration: none;
+    color:#fff;
+    font-size: 0.8vmax;
+}
+footer ul li {
+    margin-bottom: 0.6vmax;
+}
+footer ul li .headerText{
+    font-size: 1vmax;
+    color:rgb(255, 255, 255);
+    margin-top:9px;
+}
+footer ul li img{
+    width: 25%;
+}
+footer .ulCon:first-child ul{
+    text-align: center;
+}
+footer .ulCon:last-child ul{
+    display: flex;
+    gap: 2vmax;
+    margin-top: 5px;
+}
+
+footer .ulCon:last-child ul a{
+    font-size: 1.2vmax;
+}
+
+
+@media(max-width:400px)
+{
+    footer{
+        padding: 1vmax 1vmax;
+    }
+    footer ul li img{
+        width: 50%;
+    }
+    footer ul li {
+        margin-bottom: 0px;
+    }
+    footer .ulCon:last-child ul{
+        gap: 1vmax;
+    }
+    footer .ulCon:last-child ul{
+        flex-wrap: wrap;
+        gap: 1vmax;
+    }
+}

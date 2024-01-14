@@ -1,0 +1,81 @@
+@media(max-width:1440px){
+    .profilePage{
+        width: 90%;
+    }
+    .profileCon .left .imgDiv{
+        width: 35%;
+    }
+    .left a{
+        width: 60%;
+    }
+    .profileCon .right .userDetail{
+        width: 80%;
+    }
+    .profileCon button{
+        padding: 0.65vmax;
+        font-size: 1vmax;
+    }
+    .userDetail label span,.userDetail label input{
+        font-size: 1.1vmax;
+    }
+}
+
+@media(max-width:768px){
+    .profilePage{
+        width: 100%;
+    }
+    .profilePage h2{
+        font-size: 1.8vmax;
+        margin-top: 1vmax;
+        margin-bottom: 5vmax;
+    }
+    .profileCon .left .imgDiv{
+        width: 50%;
+    }
+    .left a{
+        width: 60%;
+    }
+    .profileCon .right .userDetail{
+        width: 80%;
+    }
+    .profileCon button{
+        padding: 1vmax 4vmax;
+        font-size: 1.5vmax;
+    }
+    .userDetail label span,.userDetail label input{
+        font-size: 1.75vmax;
+    }
+    .profileCon .right .userDetail
+    {
+        gap:4vmax;
+    }
+}
+
+@media(max-width:500px)
+{
+    .profilePage{
+        width: 80%;
+    }
+    .profilePage h2{
+        font-size: 2vmax;
+    }
+    .profilePage .profileCon{
+        justify-content: center;
+        flex-direction: column;
+        gap: 5vmax;
+    }
+    .profilePage .profileCon >*{
+        width:100%;
+        margin-top: 1vmax;
+    }
+    .profileCon .left .imgDiv{
+        width: 60%;
+    }
+    .left a,.profileCon .right .userDetail{
+        width: 100%;
+    }
+    .profileCon button{
+        padding: 1vmax 4vmax;
+        font-size: 1.2vmax;
+    }
+}

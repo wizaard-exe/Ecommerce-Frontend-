@@ -1,0 +1,42 @@
+.homePage{
+    padding-top: 2vmax;
+    width: 100%;
+    background-color: #fff;
+}
+.homeSection{
+    margin-top: 2vmax;
+    margin-bottom:5vmax;
+}
+.homeSection h2{
+    text-align: center;
+    font-size: 1.5vmax;
+    margin-top: 3vmax;
+    margin-bottom: 2vmax;
+
+}
+.homeSection .productCon{
+    padding: 2vmax 10%;
+    display: grid;
+    gap: 5vmax 5vmax;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+@media(max-width:1100px)
+{
+    .homeSection .productCon{
+        padding: 2vmax 4vmax;
+        display: grid;
+        gap: 5vmax 2.5vmax;
+        grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+    }
+}
+
+@media(max-width:768px)
+{
+    .homeSection .productCon{
+        padding: 2vmax 4vmax;
+        display: grid;
+        gap: 5vmax 2.5vmax;
+        grid-template-columns: repeat(auto-fill,minmax(150px,1fr));
+    }
+}

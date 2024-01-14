@@ -1,0 +1,116 @@
+.profilePage{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 1vmax;
+    padding-top: 1vmax;
+    flex-grow: 1;
+}
+.profilePage .profileCon .left >*,.profilePage .right >*{
+    margin: 0 auto;
+}
+footer{
+    margin-top: 5vmax;
+}
+
+.profilePage h2{
+    font-size: 1.2vmax;
+    text-align: center;
+    color:rgb(202, 202, 202);
+    padding-bottom: 2vmax;
+    display: none;
+}
+.profilePage .profileCon{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 3vmax 0vmax;
+}
+
+
+.profilePage .profileCon >*{
+    width: 50%;
+}
+
+.profileCon .left{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3vmax;
+
+}
+.profileCon .left .imgDiv,.left a{
+    width: 40%;
+}
+
+.profileCon .left .imgDiv{
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(202, 202, 202);
+    padding: 1vmax;
+
+}   
+.left .imgDiv img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.profileCon button{
+    padding: 1px solid red;
+    padding: 0.5vmax 4vmax;
+    width: 100%;
+    cursor: pointer;
+    font-size: 0.9vmax;
+    background-color: rgb(63, 63, 63);
+    transition: 0.2s ease all;
+    border: none;
+    color:rgb(255, 255, 255);
+}
+.profileCon button:hover{
+    background-color: rgb(33, 33, 33);
+}
+
+
+/* RIGHT SIDE  */
+
+.profileCon .right{
+    display: flex;
+    justify-content: flex-start;
+    align-items:center;
+    height: 100%;
+}
+
+.profileCon .right .userDetail
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width:50%;
+    gap:2vmax;
+    height: 100%;
+}
+
+.userDetail label{
+    display: flex;
+    flex-direction: column;
+    gap:1vmax;
+}
+.userDetail label span{
+    font-size: 0.95vmax;
+}
+
+.userDetail label input{
+    font-size: 0.85vmax;
+    padding: 0.2vmax 0vmax;
+    border: none;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    color:black;  
+    outline: none;  
+}
+.userDetail button:first-child{
+    margin-top: 1vmax;
+}

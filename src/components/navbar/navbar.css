@@ -1,0 +1,206 @@
+.navbar{
+    width: 100%;
+    background-color: #fff;
+    padding: 1.5vmax 2vmax;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vmax;
+    border-bottom:1px solid rgb(222, 222, 222);
+    overflow: hidden;
+    position: relative;
+}
+.navbar a{
+    text-decoration: none;
+    position: relative;
+}
+.navbar a:visited{
+    color:inherit;
+}
+.leftNav,.rightNav{
+    list-style: none;
+}
+
+
+/* LEFT SIDE  */
+.leftNav{
+    display: flex;
+    align-items: center;
+    gap: 5vmax;
+    width: 50%;
+}
+.leftNav h2{
+    font-size: 1.4vmax;
+}
+
+/* SEARCH INPUT  */
+
+.leftNav .searchBar{
+    position: relative;
+    flex-grow: 1;
+}
+.searchBar input{
+    width: 100%;
+    padding: 0.45vmax 1vmax;
+    font-size: 0.85vmax;
+    outline: 1px solid rgb(143, 143, 143);
+    border:none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+.searchBar input:focus{
+    outline: 1px solid rgb(55, 55, 55);
+}
+
+.searchBar .searchIcon{
+    cursor: pointer;
+    font-size: 1.1vmax;
+    position:absolute;
+    right: 0.8vmax;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100%;   
+}
+
+
+
+/* RIGHT SIDE  */
+.rightNav{
+    display: flex;
+    gap: 3vmax;
+    margin-left: 1vmax;
+}
+.rightNav li{
+    display: flex;
+    align-items: center;
+}
+.rightNav li a[href="/search"]
+{
+    font-size: 0.85vmax;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; 
+    position: relative;
+    
+}
+.rightNav li a[href="/search"]::after{
+    content: "";
+    width: 0%;
+    opacity: 0;
+    border:1px solid rgb(146, 146, 146);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.15s ease all;
+}
+.rightNav li a[href="/search"]:hover::after{
+    width: 100%;
+    opacity: 1;
+}
+.rightNav li .navIcon{
+    font-size: 1.2vmax;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    top: 2px;
+}
+.rightNav li .wIcon{
+    top: 3px;
+ }
+
+.rightNav li span{
+    position: absolute;
+    text-align: center;
+    transform: translate(50%,-50%);
+    top: 0;
+    right: 0;
+    background-color: red;
+    width: 1vmax;
+    height: 1vmax;
+    border-radius: 50%;
+    color:#fff;
+    font-size: 0.7vmax;
+}
+.rightNav li button{
+    padding: 0.2vmax 1.5vmax;
+    font-size: 0.9vmax;
+    border:none;
+    outline: 1px solid rgb(146, 146, 146);
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 1vmax;
+    color: rgb(44, 44, 44);
+    transition: 0.1s ease all;
+}
+.rightNav li button:hover{
+    outline: 1px solid rgb(0, 0, 0);
+}
+
+.barIconCon{
+    display: none;
+}
+
+
+
+
+/* SIDEBAR  */
+.navbar .sidebar{
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    gap: 0.5vmax;
+    display: none;
+    z-index: 10000000;
+}
+ .sidebarCon{
+    width: 25%;
+    background-color: #fff;
+    height: 100%;
+    padding: 1vmax;
+    transform: translateX(-100%);
+} 
+.sidebarCon h2{
+    font-size: 1.8vmax;
+    text-align: center;
+    margin-top: 1.5vmax;
+    border-bottom:1px solid rgba(171, 171, 171, 0.5); 
+    padding-bottom: 1vmax;
+}
+.sidebarCon ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1vmax;
+    margin-top: 2vmax;
+}
+.sidebarCon ul li {
+    display: flex;
+    align-items: center;
+    transition: 0.1s ease all;
+}
+.sidebarCon ul li a{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0.8vmax 0vmax ;
+    font-size: 1.3vmax;
+}
+.sidebarCon ul li:hover{
+    background-color: rgb(29, 29, 29);
+    color:#fff;
+
+}
+.sidebarCon ul .icons
+{
+    width: 5vmax;
+    font-size: 1.5vmax;
+    text-align: left;
+}
+.sidebar .closeIcon{
+    margin: 2vmax 1.5vmax;
+    font-size: 2.55vmax;
+    cursor: pointer;
+    color:#fff;
+}

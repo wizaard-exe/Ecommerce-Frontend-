@@ -1,0 +1,138 @@
+.wishlistPage{
+    width: 100%;
+    background-color: #fff;
+   
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    flex-grow: 1;
+}
+.wishlistPage .emptyWishlist{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 8vmax;
+    color:rgb(158, 158, 158);
+    font-size: 1.1vmax;
+    gap: 0.5vmax;
+    background-color: rgb(229, 229, 229);
+
+}
+
+.emptyWishlist .emptyWishlistIcon{
+    font-size: 3vmax;
+}
+
+
+.wishlistPage .wishlistCon{
+    width: 80%;
+    padding-top: 4vmax;
+
+}
+.wishlistCon h4{
+    font-size: 1vmax;
+    color:rgb(124, 124, 124);
+    text-align: center;
+    margin-bottom: 2vmax;
+    border-bottom:1px solid rgb(204, 204, 204);
+    padding-bottom: 1vmax;
+}
+.wishlistCon .wishlist{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+    color:black;
+    margin-bottom: 3vmax;
+}
+
+.wishlistCon .wishlist .imgDiv{
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wishlistCon .wishlist img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.wishlist span{
+    font-size: 0.8vmax;
+}
+.wishlist h5{
+    font-size: 0.9vmax;
+    color:rgb(83, 83, 83);
+}
+.wishlist .delIcon{
+    font-size: 1.3vmax;
+    color:rgb(83, 83, 83);
+    cursor: pointer;
+}
+
+@media(max-width:768px)
+{
+    .wishlistPage{
+        padding-top: 5vmax;
+    }
+    .wishlistPage .wishlistCon{
+        width: 90%;
+    
+    }
+    .wishlistCon h4{
+        font-size: 1.5vmax;
+        padding-bottom: 2vmax;
+    }
+    
+    .wishlistCon .wishlist .imgDiv{
+        width: 65px;
+        height: 65px;
+    }
+    
+    .wishlist span{
+        font-size: 1.5vmax;
+    }
+    .wishlist h5{
+        font-size: 1.5vmax;
+    }
+    .wishlist a .delIcon{
+        font-size: 2.2vmax;
+    }
+}
+
+@media(max-width:500px)
+{
+    .wishlistPage{
+        padding-top: 5vmax;
+    }
+    .wishlistPage .wishlistCon{
+        width: 95%;
+    
+    }
+    .wishlistCon .wishlist{
+        gap:2vmax;
+   }
+    .wishlistCon h4{
+        font-size: 1.5vmax;
+        padding-bottom: 2vmax;
+    }
+    
+    .wishlistCon .wishlist .imgDiv{
+        width: 55px;
+        height: 55px;
+    }
+    
+    .wishlist span{
+        font-size: 1.5vmax;
+        flex-grow: 1;
+    }
+    .wishlist h5{
+        font-size: 1.5vmax;
+    }
+    .wishlist a .delIcon{
+        font-size: 2.4vmax;
+    }
+}

@@ -1,0 +1,85 @@
+.selectBox{
+    font-size: 0.75vmax;
+    position: relative;
+    width: 175px;
+}
+.selectBox .resultBox{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgb(214, 214, 214);
+    padding: 0.2vmax 10px;
+}
+.selectBox .resultBox .selectIcon{
+    position: absolute;
+    right: 4px;
+    font-size: 1.2vmax;
+}
+.selectBox .optionCon{
+    border: 1px solid rgb(214, 214, 214);
+    position: absolute;
+    top:110%;left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    display:none;
+}
+.selectBox .optionCon div{
+    padding: 0.2vmax 10px;
+}
+.selectBox .optionCon div:hover{
+    background-color: rgb(54, 54, 54);
+    color:white;
+    cursor: pointer;
+}
+.selectBox .optionCon.active{
+    display: block;
+}
+
+
+/* RESPONSIVE  */
+
+@media(max-width:1440px)
+{
+    .selectBox{
+        font-size: 0.8vmax;
+        position: relative;
+        width: 150px;
+    }
+}
+@media(max-width:1024px)
+{
+    .selectBox{
+        font-size: 0.85vmax;
+        position: relative;
+        width: 100px;
+    }
+}
+@media(max-width:768px)
+{
+    .selectBox{
+        font-size: 1.35vmax;
+        position: relative;
+        width: 100%;
+        margin-bottom: 0vmax;
+    }
+    .selectBox .resultBox .selectIcon{
+        font-size: 1.5vmax;
+    }
+}
+@media(max-width:500px)
+{
+    .selectBox{
+        font-size: 1.4vmax;
+        position: relative;
+        width: 100%;
+    }    
+}
+@media(max-width:300px)
+{
+    .selectBox{
+        font-size: 1.3vmax;
+        position: relative;
+        width: 100%;
+    }    
+}

@@ -1,0 +1,123 @@
+.updateProfilePage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    z-index: 1;
+}
+.updateProfilePage form{
+    margin: 0 auto;
+    min-width:300px;
+    width: 23%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px rgba(126, 126, 126, 0.5);
+    overflow: hidden;
+    padding: 2vmax;
+    padding-top: 1.2vmax;
+}
+.updateProfilePage form .heading{
+    font-size: 1.1vmax;
+    text-align: center;
+    padding-bottom: 1vmax;
+    color:rgb(95, 95, 95);
+    border-bottom: 1px solid rgb(212, 212, 212);
+    margin-bottom: 3vmax;
+}
+
+.updateProfilePage form>*{
+    width: 100%;
+    display: block;
+    margin-bottom: 2.2vmax;
+}
+.updateProfilePage form label{
+    position: relative;
+    width: 100%;
+    margin-bottom: 2.5vmax;
+}
+.updateProfilePage form label .input{
+    width: 100%;
+    padding: 0.75vmax 3vmax;
+    font-size: 0.9vmax;
+    border:none;
+    outline: 1px solid rgb(195, 195, 195);
+}
+.updateProfilePage form label .icon{
+    position: absolute;
+    left: 0.6vmax;
+    top:50%;transform: translateY(-50%);
+    font-size: 1.5vmax;
+    color:rgb(113, 113, 113);
+}
+
+
+/* UPLOAD BUTTON */
+
+.updateProfilePage form .uploadBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vmax;
+}
+.updateProfilePage form .uploadBox div:first-child{
+    width: 65px;
+    height: 65px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.uploadBox div:first-child img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+.updateProfilePage form .uploadBox input[type=file]
+{
+    display: none;
+}
+
+
+.updateProfilePage form .uploadBox div:last-child{
+    padding: 0.4vmax;
+    border:1px solid rgb(111, 111, 111);
+    flex-grow: 1;
+    cursor: pointer;
+    color:rgb(0, 0, 0);
+    transition: 0.2s ease all;
+}
+.updateProfilePage form .uploadBox div:last-child span{
+    font-size: 0.85vmax;
+}
+.updateProfilePage form .uploadBox div:last-child:hover{
+    background-color: rgb(65, 65, 65);
+    color:rgb(255, 255, 255);
+    border:1px solid rgb(65, 65, 65);
+}
+.updateProfilePage form .uploadBox div:last-child label{
+   padding: 1vmax;
+   cursor: pointer;
+}
+
+
+.updateProfilePage form input[type=submit],.updateProfilePage form button
+{
+    padding: 0.5vmax;
+    font-size: 0.85vmax;
+    cursor: pointer;
+    border: none;
+    transition: 0.15s ease all;
+    background-color: rgb(95, 95, 95);
+    color:#fff;
+    width: 100%;
+}
+.updateProfilePage form input[type=submit]:hover,.updateProfilePage form button:hover{
+    background-color: rgb(65, 65, 65);
+    
+}
+
+

@@ -1,0 +1,12 @@
+.carouselCon{
+    width: 100%;
+    margin: 0 auto;
+    user-select: none;
+    /* padding-top: 2vmax;
+    background-color: #fff; */
+
+}
+ 
+.carouselCon .imgCon{
+    width: 100%;
+}

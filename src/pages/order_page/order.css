@@ -1,0 +1,111 @@
+.orderPage{
+    width: 100%;
+    flex-grow: 1;
+    height: 100%;
+    padding-top: 2vmax;
+    display: flex;
+    justify-content: center;
+}
+.orderPage .zeroOrder
+{
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+.zeroOrder h2{
+    font-size: 1.2vmax;
+    margin-top: 2vmax;
+    color: rgb(109, 109, 109);
+}
+.orderCon{
+    width: 70%;
+    overflow-x: auto;
+    /* border:1px solid rgb(189, 189, 189); */
+}
+
+
+
+.orderCon table{
+    width: 100%;
+    border-collapse: collapse;
+    border:1px solid rgb(204, 204, 204);
+
+}
+/* thead */
+.orderCon table tbody tr:hover {
+    transition: 0.1s ease all;
+}
+.orderCon table  tr td{
+    padding: 1vmax;
+    padding-right: 0.2vmax;
+    font-size: 0.9vmax;
+}
+.orderCon table tbody tr td{
+    padding: 1vmax;
+    padding-right: 0.2vmax;
+    font-size: 0.9vmax;
+}
+.orderCon table  tr td:first-child{
+    padding-left: 2vmax;
+}
+
+.orderCon table  tr td a{
+    text-decoration: none;
+    width: 50%;
+}
+.orderCon table thead{
+    background-color: rgb(78, 78, 78);
+    color:rgb(255, 255, 255);
+    border:1px solid rgb(78, 78, 78);
+}
+
+
+.orderCon table  tr{
+    transition: 0.1s ease all;
+}
+
+.orderCon table tbody  tr:hover{
+    background-color: rgb(215, 215, 215);
+}
+
+.orderCon table  tr .imgCon{
+    width: 75px;
+    height: 75px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.orderCon table  tr .imgCon img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+@media(max-width:768px)
+{
+    .orderCon{
+        width: 80%;
+    }
+    .orderCon table  tr .imgCon{
+        width: 60px;
+        height: 60px;
+    }
+    .orderCon table  tr td:first-child{
+        padding-left: 1vmax;
+    }
+}
+
+@media(max-width:500px)
+{
+    .orderCon{
+        width: 100%;
+    }
+    .orderCon table  tr .imgCon{
+        width: 90px;
+        height: 50px;
+    }
+}
+
+
+

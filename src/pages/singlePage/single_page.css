@@ -1,0 +1,166 @@
+.singlePage{
+    width: 100%;
+    background-color: white;
+
+}
+.singlePage .topCon,.reviewCon, .suggestionCon
+{
+    width: 60%;
+    margin: 0 auto;
+}
+.singlePage .topCon 
+{
+    display: flex;
+    padding-top: 5vmax;
+    padding-bottom: 1vmax;
+    gap: 5vmax;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+/* LEFT SIDE  */
+
+.singlePage .leftSide{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 2vmax;  
+    flex-grow: 1;
+}
+.leftSide .sideImg >*{
+    width: 65px;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 1vmax;
+    border-radius: 7px;
+    transition: 0.15s ease-out all;
+}
+.leftSide .sideImg div:hover{
+    transform: scale(1.08);
+}
+.sideImg img,.mainImg img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+.leftSide .mainImg
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;  
+    transition: 0.9s ease all;
+    padding: 0vmax 2vmax;
+
+}
+
+
+
+
+/* RIGHT SIDE  */
+.singlePage .rightSide{
+    width: 45%;
+    flex-shrink: 0;
+}
+.rightSide>*{
+    margin-bottom: 0.7vmax;
+}
+
+.rightSide .titleCon h2 {
+    font-size: 1vmax;
+    margin-bottom: 0vmax;
+}
+
+.rightSide .ratingCon
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.rightSide .ratingCon span{
+    font-size: 0.88vmax;
+}
+
+.rightSide .PriceCon h2
+{
+    font-size: 1.2vmax;
+}
+.rightSide .statusCon{
+    font-size: 0.9vmax;
+    font-weight: 500;
+    display: flex;
+    gap: 0.5vmax;
+    margin: 1.5vmax 0vmax;
+}
+.statusCon span:last-child.red{
+    color:red;
+}
+.statusCon span:last-child.green{
+    color:rgb(0, 111, 0);
+    font-weight: 500;
+}
+.rightSide .productDetail p
+{  
+    margin-bottom: 0.5vmax;
+    font-size: 0.85vmax;
+    text-align: justify;
+}
+.rightSide .productDetail p:first-child{
+    font-weight: bold;
+    color:rgb(69, 69, 69);
+}
+.ratingCon span:last-child{
+    position: relative;
+    top:1px;
+}
+
+
+.rightSide .buttonCon 
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2vmax;
+}
+.rightSide .buttonCon button{
+    margin-bottom: 1.5vmax;
+    padding: 0.6vmax 2vmax;
+    font-size: 0.9vmax;
+    border-radius: 30px;
+    cursor: pointer;
+    border:1px solid rgb(105, 105, 105);
+    transition: 0.15s ease all;
+    width: 100%;
+}
+.buttonCon button:hover{
+    background-color: black;
+    color:white;
+}
+
+/* SUGGESTION BOX  */
+.singlePage .suggestionCon{
+    margin:3vmax auto;
+    /* width: 75%; */
+}
+.suggestionCon h3{
+    font-size: 1vmax;
+    color:rgb(97, 97, 97);
+    margin-bottom:2.5vmax;
+}
+
+
+/* REVIEW CON */
+
+.singlePage .reviewCon{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1vmax;
+    padding-top: 2vmax;
+
+}
+.singlePage .reviewCon h2{
+    text-align: center;
+    color:rgb(97, 97, 97);
+    font-size: 1vmax;
+}

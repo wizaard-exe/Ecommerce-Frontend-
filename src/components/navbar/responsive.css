@@ -1,0 +1,99 @@
+/* 1024 */
+@media(max-width:1024px)
+{
+    .navbar{
+        padding: 2vmax;
+    }
+    .rightNav li span{
+        transform: translate(50%,0%)
+    }
+
+}
+
+/* 768 */
+@media(max-width:768px)
+{
+    .navbar{
+        gap:2vmax;
+        padding: 2vmax 1vmax;
+    }
+    .barIconCon{
+        display: flex;
+        justify-content: center;
+        align-content: baseline;
+        font-size: 2vmax;
+        cursor: pointer;
+    }
+    .rightNav{
+        display: none;
+    }
+    .leftNav{
+        flex-grow: 0.8;
+        gap: 1vmax;
+    }
+    .leftNav h2{
+        font-size: 2vmax;
+    }
+    .searchBar input{
+        padding: 1vmax 2vmax;
+        font-size: 1.5vmax;
+    }
+    .searchBar .searchIcon{
+        width: 2vmax;
+        right:1.5vmax;
+    }
+    .barIconCon{
+        font-size: 2.3vmax;
+    }
+}
+
+@media(max-width:500px)
+{
+    .navbar{
+        padding: 2vmax 1vmax;
+        gap: 1vmax;
+    }
+    .leftNav{
+        gap:4vmax;
+    }
+    .leftNav h2{
+        font-size: 1.7vmax;
+        flex-wrap: nowrap;
+    }
+    .searchBar input{
+        padding: 0.8vmax 1vmax;
+        font-size: 1.5vmax;
+    }
+    .barIconCon{
+        font-size: 2.5vmax;
+    }
+
+    .sidebarCon{
+        width: 50%;
+    }
+}
+
+@media(max-width:350px)
+{
+    .navbar{
+        padding: 2vmax 0.5vmax;
+        justify-content: center;
+        gap: 3vmax;
+    }
+    .leftNav{
+        gap: 0vmax;
+    }
+    .leftNav h2{
+        display: none;
+    }  
+
+}
+@media(max-width:250px)
+{
+    .navbar{
+        gap: 2vmax;
+    }
+    .sidebarCon ul li a{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,104 @@
+@media(max-width:1440px)
+{
+    .cartPage{
+        padding-top: 6vmax;
+    }
+    .cartPage .cartCon{
+        width: 90%;
+    }
+}
+@media(max-width:768px)
+{
+    .cartPage .cartCon{
+        position: relative;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .cartCon .right{
+        width: 60%;
+        position: relative;
+        top:0;
+        border-radius: 0px;
+        font-size: 1.5vmax;
+    }
+    .cartCon .right button{
+        font-size: 1.1vmax;
+        padding: 0.8vmax;
+        margin-top: 2vmax;
+    }
+    .cartPage .cartCon{
+        width: 85%;
+        margin: 0 auto;
+    }
+    .leftCart div:first-child {
+        width: 80px;
+        height: 80px;
+    }
+    .cartCon .left .cart{
+        width: 100%;
+        margin-bottom:10vmax;
+
+    }
+    .left .cart .leftCart{
+
+        gap: 5vmax;
+    }
+    .leftCart div:last-child
+    {
+        gap: 1vmax;
+    }
+    .leftCart div:last-child>*{
+        font-size: 1.5vmax;
+    }
+    .rightCart button{
+        font-size: 2vmax;
+        width: 25px;
+        height: 25px;
+    }
+    .rightCart div span{
+        font-size: 1.1vmax;
+    }
+    .rightCart p .delIcon{
+        font-size: 2.1vmax;
+    }
+}
+
+
+
+
+@media(max-width:500px)
+{
+    .cartCon .right{
+        width: 90%;
+    }
+    .cartPage .cartCon{
+        width:90%;
+
+    }
+    
+    .left .cart .leftCart{
+
+        gap: 2vmax;
+    }
+    .left .cart .rightCart{
+        gap: 2vmax;
+    }
+    .rightCart div{
+        gap: 1vmax;
+    }
+    .rightCart button{
+        font-size: 1.5vmax;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media(max-width:300px){
+    .cartPage .cartCon{
+        width:90%;
+
+    }
+    .cartCon .right{
+        width: 100%;
+    }
+}

@@ -1,0 +1,115 @@
+@media(max-width:1440px)
+{
+    .searchPage{
+        width: 100%;
+    }
+    .rightSide .productCon{
+        gap: 1.5vmax;
+        grid-template-columns: repeat(auto-fit,minmax(225px,1fr));
+    }
+    .searchPage .leftSide
+    {
+        padding-left: 3vmax;
+    }
+}
+
+@media(max-width:1050px)
+{
+    .rightSide .productCon{
+        gap: 1.5vmax;
+        grid-template-columns: repeat(auto-fit,minmax(175px,1fr));
+    }
+}
+
+
+
+
+@media(max-width:768px)
+{
+    .rightSide .topCon .sortBy{
+        display: none;
+    }
+    .searchPage{
+        width: 100%;
+    }
+    .searchPage .leftSide
+    {
+        position: fixed;
+        right: 0;
+        transform:translateX(100%);
+        top:0;
+        z-index: 1;
+        background-color: #fff;
+        padding: 5vmax 3vmax;
+        box-shadow: -2px 0px 10px rgba(52, 52, 52,0.2);
+        transition: 0.2s ease all;
+        width: 25%;
+    }
+    .searchPage .leftSide .filterTitle{
+        display: block;
+        font-size: 2vmax;
+        margin-bottom: 2.5vmax;
+    }
+    .searchPage .leftSide >*{
+        margin-bottom: 5vmax;
+    }
+    
+    .leftSide .category,.brand,.rating,.price{
+        font-size: 1.6vmax;
+    }
+    .leftSide .arrow
+    {
+        font-size:2vmax;
+    }
+
+
+    .leftSide .categoryAccordion>*,.brandAccordian>*
+    {
+
+        gap:1vmax;
+        font-size:1.4vmax;
+    }
+    .leftSide .categoryAccordion input[type="checkbox"],.brandAccordian input[type="checkbox"]{
+        width: 1.5vmax;
+    }
+    .searchPage .leftSide.move{
+        transform: translateX(0%);
+    }
+    .leftSide .closeIcon{
+        display: block;
+        position: absolute;
+        top:10px;right:10px;
+        font-size: 2vmax;
+    }
+    .searchPage .rightSide{
+        padding: 3vmax 4vmax;
+
+    }
+    .rightSide .productCon{
+        display: grid;
+        gap: 2vmax 4vmax;
+        grid-template-columns: repeat(auto-fit,minmax(175px,1fr));
+    }
+    .rightSide .filterIcon
+    {
+        display: block;
+    }
+    .rightSide .topCon span{
+        font-size: 1.8vmax;
+    }
+}
+
+@media(max-width:500px)
+{
+    .searchPage .leftSide
+    {
+        width:45%;
+    }
+}
+@media(max-width:350px)
+{
+    .searchPage .leftSide
+    {
+        width:50%;
+    }
+}

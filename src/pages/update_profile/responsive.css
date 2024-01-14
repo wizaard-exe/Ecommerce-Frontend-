@@ -1,0 +1,87 @@
+@media(max-width:1440px){
+    .updateProfilePage form{
+        min-width:25%;
+        width: 30%;
+        padding: 2vmax;
+    }
+    .updateProfilePage form label .input{
+        padding: 0.8vmax 5vmax;
+        font-size: 1.1vmax;
+    }
+    .updateProfilePage form label .icon{
+        position: absolute;
+        left: 1vmax;
+        top:50%;transform: translateY(-50%);
+        font-size: 2vmax;
+        color:rgb(113, 113, 113);
+    }
+    .updateProfilePage form input[type=submit],.updateProfilePage form button
+    {
+        padding: 0.7vmax;
+        font-size: 1vmax;
+    }
+    .updateProfilePage form .uploadBox div:last-child{
+        padding: 0.7vmax;
+    }
+}
+
+
+@media(max-width:1024px){
+    .updateProfilePage form{
+        min-width:40%;
+        width: 42%;
+        padding: 4vmax;
+    }
+    .updateProfilePage form .heading{
+        font-size: 1.8vmax;
+        padding: 2vmax;
+    }
+    .updateProfilePage form label{
+        margin-top: 4vmax;
+    }
+    .updateProfilePage form label .input{
+        padding: 1.3vmax 5vmax;
+        padding-right: 0;
+        font-size: 1.5vmax;
+    }
+    .updateProfilePage form label .icon{
+        left: 1vmax;
+        font-size: 2.5vmax;
+    }
+    .updateProfilePage form .uploadBox div:first-child{
+        width:70px;
+        height: 70px;
+    }
+    .updateProfilePage form .uploadBox div:last-child{
+        padding: 0.8vmax;
+    }
+    .updateProfilePage form .uploadBox div:last-child span{
+        font-size: 1.2vmax;
+    }
+    .updateProfilePage form input[type=submit],.updateProfilePage form button
+    {
+        padding: 1vmax;
+        font-size: 1.2vmax;
+        margin-top: 1vmax;
+    }
+}
+
+@media(max-width:768px)
+{
+    .updateProfilePage form{
+        min-width:45%;
+        width: 45%;
+    }
+}
+
+@media(max-width:500px)
+{
+    .updateProfilePage form{
+        min-width:90%;
+        width: 90%;
+    }
+    .updateProfilePage form label .input{
+        padding: 1vmax 5vmax;
+    }
+}
+

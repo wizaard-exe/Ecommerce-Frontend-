@@ -1,0 +1,187 @@
+.changePasswordPage{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height:100vh;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    position: absolute;
+    z-index: 1;
+}
+.changePasswordPage form{
+    margin: 0 auto;
+    min-width:300px;
+    width: 23%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 2px rgba(126, 126, 126, 0.5);
+    overflow: hidden;
+    padding: 2vmax;
+    padding-top: 2vmax;
+}
+.changePasswordPage form .heading{
+    font-size: 1.1vmax;
+    text-align: center;
+    padding-bottom: 1vmax;
+    color:rgb(95, 95, 95);
+    border-bottom: 1px solid rgb(212, 212, 212);
+    margin-bottom: 2.5vmax;
+}
+
+.changePasswordPage form>*{
+    width: 100%;
+    display: block;
+    margin-bottom: 2vmax;
+}
+.changePasswordPage form label{
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 2.5vmax;
+}
+.changePasswordPage form label .input{
+    width: 100%;
+    padding: 0.75vmax 3vmax;
+    font-size: 0.9vmax;
+    border:none;
+    outline: 1px solid rgb(195, 195, 195);
+}
+.changePasswordPage form label .icon{
+    position: absolute;
+    left:0.5vmax;top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.3vmax;
+    color:rgb(113, 113, 113);
+}
+.changePasswordPage form label .key {
+    right:0;
+    position: absolute;
+    right: 1vmax;
+    top:50%;transform: translateY(-50%);
+    color:rgb(133, 133, 133);
+    cursor: pointer;
+    font-size: 1.4vmax;
+}
+
+.changePasswordPage form input[type=submit],.changePasswordPage form button
+{
+    padding: 0.5vmax;
+    font-size: 0.85vmax;
+    cursor: pointer;
+    border: none;
+    transition: 0.15s ease all;
+    background-color: rgb(95, 95, 95);
+    color:#fff;
+    width: 100%;
+}
+.changePasswordPage form input[type=submit]:hover,.changePasswordPage form button:hover{
+    background-color: rgb(65, 65, 65);
+    
+}
+
+
+/* RESPONSIVE  */
+
+@media(max-width:1440px){
+    .changePasswordPage form{
+        min-width:25%;
+        width: 30%;
+        padding: 2.5vmax;
+    }
+    .changePasswordPage form input[type=submit]{
+        margin-top: 4vmax;
+    }
+    .changePasswordPage form button{
+        margin-top: 0.2vmax;
+    }
+    .changePasswordPage form .heading{
+        font-size: 1.4vmax;
+        border-bottom: 1px solid rgb(191, 191, 191);
+    }
+    .changePasswordPage form label{
+        margin-bottom: 3vmax;
+    }
+
+    .changePasswordPage form label .input{
+        padding: 1vmax 4vmax;
+        font-size: 1.1vmax;
+    }
+    .changePasswordPage form label .icon{
+
+        font-size: 1.9vmax;
+        left: 1vmax;
+    }
+
+    .changePasswordPage form label .key {
+
+        font-size: 1.5vmax;
+    }
+
+    .changePasswordPage form input[type=submit],.changePasswordPage form button
+    {
+        padding: 0.7vmax;
+        font-size: 1vmax;
+    }
+}
+
+
+@media(max-width:1024px){
+    .changePasswordPage form{
+        min-width:40%;
+        width: 42%;
+        padding: 2vmax 4vmax;
+    }
+    .changePasswordPage form .heading{
+        font-size: 1.8vmax;
+        padding: 2vmax;
+    }
+    .changePasswordPage form label{
+        margin-top: 4vmax;
+    }
+    .changePasswordPage form label .input{
+        padding: 1.3vmax 5vmax;
+        padding-right: 0;
+        font-size: 1.5vmax;
+    }
+    .changePasswordPage form label .icon{
+        left: 1vmax;
+        font-size: 2.2vmax;
+    }
+    .changePasswordPage form label .key {
+
+        font-size: 2vmax;
+    }
+    .changePasswordPage form input[type=submit],.changePasswordPage form button
+    {
+        padding: 1vmax;
+        font-size: 1.2vmax;
+        margin-bottom: 1vmax;
+    }
+    .changePasswordPage form input[type=submit]{
+        margin-top: 5vmax;
+    }
+    .changePasswordPage form button{
+        margin-top: 2vmax;
+    }
+}
+
+@media(max-width:768px)
+{
+    .changePasswordPage form{
+        min-width:45%;
+        width: 45%;
+    }
+}
+
+@media(max-width:500px)
+{
+    .changePasswordPage form{
+        min-width:90%;
+        width: 90%;
+    }
+    .changePasswordPage form label .input{
+        padding: 1vmax 5vmax;
+    }
+}
+
+
+

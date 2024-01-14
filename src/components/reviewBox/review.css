@@ -1,0 +1,73 @@
+
+.reviewCon .review,.reviewCon .review >*{
+    width: 100%;
+    margin-bottom: 0.5vmax;
+}
+.reviewCon .review{
+    border-bottom: 1px solid rgb(219, 219, 219);
+    padding-bottom: 0.5vmax;
+    margin-bottom:2vmax;
+}
+.review .userDetail{
+    display: flex;
+    align-items: flex-start;
+    gap:1vmax;
+}
+.userDetail .userName
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.userDetail .userProfile{
+    width: 2vmax;
+    height: 2vmax;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+.userDetail .userProfile img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.review .userDetail h2{
+    font-size: 0.8vmax;
+    margin-left: 2px;
+}
+.review p{
+    font-size: 0.9vmax;
+}
+
+.reviewCon .review textarea{
+    resize: vertical;
+    width: 100%;
+    border:none;
+    outline:1px solid rgb(173, 173, 173);
+    border-radius: 5px;
+    padding: 0.5vmax;
+    font-size: 0.7vmax;
+}
+
+.reviewCon .review textarea:focus{
+    outline:1px solid black;
+}
+.review .textAreaCon button{
+    margin-right:1vmax;
+    margin-top: 1vmax;
+    padding: 0.3vmax 1vmax;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0.7vmax;
+    border:none;
+    background-color: rgb(192, 192, 192);
+}
+.textAreaCon button:hover{
+    background-color: rgb(32, 32, 32);
+    color:white;
+    outline:none;
+}
+.textAreaCon button:last-child:hover{
+    background-color: rgb(112, 112, 112);
+}

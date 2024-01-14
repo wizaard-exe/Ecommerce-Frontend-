@@ -1,0 +1,244 @@
+.searchCon{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.694);   
+    
+}
+.searchPage{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    gap: 0.2vmax;
+    align-items: flex-start;
+}
+
+
+
+/* LEFT SIDE  */
+.searchPage .leftSide{
+    padding: 3vmax 1.5vmax;
+    width: 15%;
+    position: sticky;
+    top:0px;
+    min-height: 100vh;
+    transform: translate(0%);
+}
+.searchPage .leftSide .filterTitle{
+    display: none;
+}
+.searchPage .leftSide >*{
+    margin-bottom: 2vmax;
+}
+.leftSide .closeIcon{
+    display: none;
+}
+
+.leftSide .category,.brand,.rating,.price{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    margin-bottom: 0.3vmax;
+    font-size: 0.9vmax;
+    font-weight: 500;
+}
+.leftSide .arrow
+{
+    font-size: 1.4vmax;
+}
+.leftSide .categoryAccordion>*,.brandAccordian>*
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5vmax;
+    margin-top:10px;
+    font-size: 0.85vmax;
+}
+.leftSide .categoryAccordion,.brandAccordian
+{
+    transition:0.2s ease all;
+    overflow: hidden;
+}
+
+.leftSide .categoryAccordion input[type="checkbox"],.brandAccordian input[type="checkbox"]{
+    cursor: pointer;
+    width: 0.8vmax;
+}
+
+
+
+
+
+
+/* RIGHT SIDE  */
+.searchPage .rightSide{
+    flex-grow: 1;
+    padding: 3vmax 2vmax;
+    border-left:1px solid rgb(222, 222, 222);
+}
+.rightSide .topCon{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SELECT BOX */
+
+.rightSide .topCon .sortBy{
+    display: flex;
+    align-items: center;
+    gap:1vmax;
+    font-size: 0.85vmax;
+}
+
+.selectBox{
+    font-size: 0.8vmax;
+    position: relative;
+    width: 175px;
+}
+.selectBox .resultBox{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid rgb(214, 214, 214);
+
+    padding: 0.2vmax 10px;
+}
+.selectBox .resultBox .selectIcon{
+    position: absolute;
+    right: 4px;
+    font-size: 1.2vmax;
+}
+.selectBox .optionCon{
+    border: 1px solid rgb(214, 214, 214);
+    position: absolute;
+    top:110%;left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    display:none;
+}
+.selectBox .optionCon div{
+    padding: 0.2vmax 10px;
+}
+.selectBox .optionCon div:hover{
+    background-color: rgb(93, 93, 93);
+    color:white;
+    cursor: pointer;
+}
+.selectBox .optionCon.active{
+    display: block;
+}
+
+
+.rightSide .filterIcon
+{
+    font-size:2.5vmax;
+    cursor: pointer;
+    display: none;
+}
+.rightSide .topCon span{
+    
+    font-size: 1vmax;
+
+}
+.rightSide .productCon{
+    display: grid;
+    gap: 4vmax;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    margin:2vmax 0;
+}
+.rightSide .paginationCon{
+    margin: 2vmax auto;
+    margin-top: 5vmax;
+    width: fit-content;
+}
+.paginationCon .pagination{
+    display: flex;
+    list-style: none;
+}
+.pagination li{
+    border: 1px solid rgb(171, 171, 171);
+    display: flex;
+    justify-content: center;
+    align-content:center ;
+    padding: 0.5vmax 1.5vmax;
+    border-right: none;
+    cursor: pointer;
+    transition: 0.1s ease all;
+}
+.pagination li:last-child{
+    border: 1px solid rgb(171, 171, 171);
+}
+.pagination li:hover{
+    background-color: rgb(204, 204, 204);
+}
+.pagination li.active{
+    background-color: rgb(103, 103, 103);
+    
+}
+.pagination li.active a{
+    color:rgb(255, 255, 255);
+}
+.pagination li a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-size:0.8vmax;
+}
+.pagination li a .icon{
+    position: relative;
+    top:3px;
+    color:rgb(90, 90, 90);
+}
+
+
+/* Range Slider  */
+.priceFilter input[type=range]{
+    appearance: none;
+    width: 100%;
+    margin-top: 0.5vmax;
+    cursor: pointer;
+    background-color: rgb(170, 170, 170);
+    height: 4px;
+    position: relative;
+    --slider-value: 0px;
+}
+
+.priceFilter input[type=range]::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: calc(var(--slider-value) / 1000 * 100% );
+    background-color: rgb(68, 68, 68);
+}
+.priceFilter input[type=range]::-webkit-slider-thumb{
+    appearance: none;
+    background-color: rgb(68, 68, 68);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+.priceFilter input[type=range]::-moz-range-thumb {
+    appearance: none;
+    background-color: rgb(68, 68, 68);
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+@media(max-width:768px) {
+    .priceFilter input[type=range]::-webkit-slider-thumb{
+        width: 10px;
+        height: 10px;
+    }
+    .priceFilter input[type=range]::-moz-range-thumb
+    {
+        width: 10px;
+        height: 10px;
+    }
+    .priceFilter input[type=range]{
+        height:3px;
+        position: relative;
+        --slider-value: 0px;
+    }
+}

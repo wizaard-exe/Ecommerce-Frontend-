@@ -1,0 +1,128 @@
+@media(max-width:1440px)
+{
+
+    .singlePage .topCon, .singlePage .reviewCon,.singlePage .suggestionCon
+    {
+        width: 75%;
+    }
+}
+
+@media(max-width:1024px)
+{
+    .singlePage .topCon, .singlePage .reviewCon,.singlePage .suggestionCon
+    {
+        width: 85%;
+    }
+    .suggestionCon h3{
+        font-size: 1.4vmax;
+    }
+}
+
+
+
+@media(max-width:768px)
+{
+    .singlePage .topCon, .singlePage .reviewCon,.singlePage .suggestionCon
+    {
+        width:90%;
+
+    }
+    .singlePage .topCon{
+        border-bottom: 1px solid rgb(220, 220, 220);
+    }
+    .singlePage .leftSide{
+        flex-direction: column-reverse;
+        gap: 3vmax 0vmax;  
+        justify-content: flex-end;
+    }
+    .leftSide .sideImg{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        gap: 1vmax;
+    }
+    .singlePage .leftSide{
+        padding: 0vmax  2vmax;
+    }
+    .leftSide .mainImg
+    {
+        height: 70%;
+    }
+    .singlePage .rightSide{
+        width: 45%;
+    }
+
+    .rightSide .titleCon h2 {
+        font-size: 1.9vmax;
+    }
+    .rightSide .ratingCon span{
+        font-size: 1.2vmax;
+        margin-top: 1vmax;
+    }
+    .rightSide .PriceCon h2
+    {
+        font-size: 1.9vmax;
+        margin-top: 1.5vmax;
+    }
+    .rightSide .statusCon{
+        font-size:1.5vmax;
+    }
+    .rightSide .productDetail p
+    {  
+        margin-bottom: 0.5vmax;
+        font-size: 1.4vmax;
+        text-align: justify;
+    }
+    .rightSide .buttonCon button{
+        margin-bottom: 2.5vmax;
+        padding: 1vmax 0vmax;
+        font-size: 1.1vmax;
+        font-weight: bold;
+    }
+    .singlePage .reviewCon h2{
+        font-size: 1.5vmax;
+    }
+    
+    .singlePage .reviewCon{
+        padding-top: 5vmax;
+    }
+        
+}
+
+@media(max-width:500px)
+{
+    .singlePage .topCon 
+    {
+        flex-direction: column;
+    }
+    .singlePage .topCon>*
+    {
+        width: 100%;
+    }
+    .singlePage .leftSide{
+        gap:5vmax 0vmax;  
+        padding: 2vmax;
+    }
+    .leftSide .sideImg{
+        justify-content: space-between;
+    }
+    .leftSide .mainImg
+    {
+        width: 90%;
+        min-height: 100%;
+        padding: 0;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .leftSide .mainImg img{
+        object-fit: contain;
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+}
+
+@media(max-width:500px)
+{
+
+}
