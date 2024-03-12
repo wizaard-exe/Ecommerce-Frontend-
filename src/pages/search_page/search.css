@@ -26,6 +26,10 @@
 }
 .searchPage .leftSide .filterTitle{
     display: none;
+    
+}
+.searchPage .mdSelectBox{
+    border:1px solid red;
 }
 .searchPage .leftSide >*{
     margin-bottom: 2vmax;
@@ -42,6 +46,11 @@
     margin-bottom: 0.3vmax;
     font-size: 0.9vmax;
     font-weight: 500;
+
+}
+.leftSide .category,.brand,.ratingS,.price{
+    border-bottom: 2px solid rgb(244, 244, 244);    
+    padding-bottom: 0.5rem;
 }
 .leftSide .arrow
 {
@@ -145,9 +154,9 @@
 .rightSide .productCon{
     display: grid;
     gap: 4vmax;
-    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     margin:2vmax 0;
-}
+    place-items: center;}
 .rightSide .paginationCon{
     margin: 2vmax auto;
     margin-top: 5vmax;
@@ -202,13 +211,14 @@
     height: 4px;
     position: relative;
     --slider-value: 0px;
+    --slider-max-value:0;
 }
 
 .priceFilter input[type=range]::after {
     content: "";
     position: absolute;
     height: 100%;
-    width: calc(var(--slider-value) / 1000 * 100% );
+    width: calc(var(--slider-value) / var(--slider-max-value) * 100% );
     background-color: rgb(68, 68, 68);
 }
 .priceFilter input[type=range]::-webkit-slider-thumb{

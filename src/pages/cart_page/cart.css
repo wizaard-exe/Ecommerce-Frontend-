@@ -47,8 +47,8 @@
     gap: 2vmax;
 }
 .leftCart div:first-child {
-    width: 100px;
-    height:100px;
+    width: 90px;
+    height:90px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,10 +64,13 @@
 {
    display: flex;
    flex-direction: column;
-   gap: 0.5vmax;
+   gap: 1vmax;
 }
 .leftCart div:last-child>*{
     font-size: 0.85vmax;
+}
+.leftCart div:last-child span{
+    font-size: 1.1vmax;
 }
 
 

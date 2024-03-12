@@ -1,10 +1,20 @@
 .orderPage{
     width: 100%;
-    flex-grow: 1;
     height: 100%;
-    padding-top: 2vmax;
+    flex-grow: 1;
+   
     display: flex;
     justify-content: center;
+}
+.orderPage .noOrder{
+    width: 100%;
+    min-height: 100%;
+    font-size: 1.5vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2vmax;
+    
 }
 .orderPage .zeroOrder
 {
@@ -20,7 +30,7 @@
 .orderCon{
     width: 70%;
     overflow-x: auto;
-    /* border:1px solid rgb(189, 189, 189); */
+    margin-top: 2.5vmax;
 }
 
 
@@ -29,6 +39,7 @@
     width: 100%;
     border-collapse: collapse;
     border:1px solid rgb(204, 204, 204);
+    overflow-x: auto;
 
 }
 /* thead */
@@ -85,14 +96,18 @@
 @media(max-width:768px)
 {
     .orderCon{
-        width: 80%;
+        width: 85%;
     }
     .orderCon table  tr .imgCon{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 40px;
+        padding-left: 1vmax;
     }
     .orderCon table  tr td:first-child{
         padding-left: 1vmax;
+    }
+    .orderCon table tbody tr td, .orderCon table thead tr td {
+        font-size:1.3vmax;
     }
 }
 
@@ -102,10 +117,22 @@
         width: 100%;
     }
     .orderCon table  tr .imgCon{
-        width: 90px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
+        padding-left: 0vmax;
+    }
+    .orderCon table tbody tr td, .orderCon table thead tr td {
+        font-size:1.2vmax;
     }
 }
-
-
+@media(max-width:300px)
+{
+    .orderCon{
+        width: 100%;
+    }
+    .orderCon table  tr .imgCon{
+        width: 35px;
+        height: 35px;
+    }
+}
 

@@ -4,12 +4,12 @@ import "react-multi-carousel/lib/styles.css";
 import './multiCarousel.css';
 import { Link } from 'react-router-dom';
 
-const MultiCarousel = () => {
+const MultiCarousel = ({related_products}) => {
     
     const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 5,
+      items: 4,
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
@@ -36,14 +36,16 @@ const MultiCarousel = () => {
             removeArrowOnDeviceType={["tablet", "mobile"]}
             dotListClass="custom-dot-list-style"
             >
-            <Link to="/product/:id"><img src="/phone.webp"/></Link>
-            <Link to="/product/:id"><img src="/camera.jpg"/></Link>
-            <Link to="/product/:id"><img src="/phone.webp"/></Link>
-            <Link to="/product/:id"><img src="/camera.jpg"/></Link>
-            <Link to="/product/:id"><img src="/phone.webp"/></Link>
-            <Link to="/product/:id"><img src="/camera.jpg"/></Link>
-            <Link to="/product/:id"><img src="/phone.webp"/></Link>
-            <Link to="/product/:id"><img src="/camera.jpg"/></Link>
+            {related_products && related_products.length !== 0 && related_products.map((product,key) => (
+              <Link key={key} to={`/product/${product._id}`}>
+                <img src={product.images[0]} alt={`Product ${product.id}`} />
+              </Link>
+            ))}
+
+            
+                    
+
+
 
         </Carousel>    
   )

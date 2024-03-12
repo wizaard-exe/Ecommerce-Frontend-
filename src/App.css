@@ -9,18 +9,19 @@
   /* font-family: 'Poppins', sans-serif; */
   /* font-family: 'Roboto', sans-serif; */
 }
-body{
+body {
   overflow-x: hidden;
   max-width: 100vw;
   min-height: 100vh;
   background-color: #cccccc;
+  background-color: #ffffff;
   position: relative;
-  z-index: -1;
 }
-.appCon{
-  min-height: 100vh;
+
+.appCon {
+  min-height: 100vh; 
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
 }
 .appCon:last-child{
   flex-grow: 1;

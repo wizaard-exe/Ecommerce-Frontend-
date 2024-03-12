@@ -8,6 +8,11 @@
     padding-bottom: 0.5vmax;
     margin-bottom:2vmax;
 }
+
+.reviewCon .review:last-child{
+    padding-bottom: 2vmax;
+    border-bottom: none;
+}
 .review .userDetail{
     display: flex;
     align-items: flex-start;

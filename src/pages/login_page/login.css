@@ -16,6 +16,8 @@
     box-shadow: 0px 0px 2px rgba(126, 126, 126, 0.5);
     overflow: hidden;
     padding-top: 1vmax;
+    min-height: 75%;
+    
 }
 .loginPage .loginCon>*{
     width: 100%;
@@ -179,13 +181,18 @@ form .uploadBox{
 }
 
 form .uploadBox div:first-child{
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
     margin-bottom: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    overflow: hidden;
+}
+form .uploadBox .profileBorder{
+    border:2px solid rgb(187, 187, 187);
 }
 form .uploadBox input[type=file]
 {

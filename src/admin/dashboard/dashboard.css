@@ -1,0 +1,8 @@
+.dashboardPage{
+    border:1px solid red;
+    flex-grow: 1;
+    display: flex;
+}
+.dashboardPage .dashboard{
+    flex-grow: 1;
+}

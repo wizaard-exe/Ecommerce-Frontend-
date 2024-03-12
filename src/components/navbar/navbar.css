@@ -103,7 +103,12 @@
     top: 2px;
 }
 .rightNav li .wIcon{
-    top: 3px;
+    top: 2px;
+    font-size:1.35vmax;
+ }
+ .rightNav li .cicon{
+    top: 0px;
+    font-size:1.35vmax;
  }
 
 .rightNav li span{

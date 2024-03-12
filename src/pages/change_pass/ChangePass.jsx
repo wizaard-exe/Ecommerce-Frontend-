@@ -6,7 +6,7 @@ import KeyOffIcon from '@mui/icons-material/KeyOff';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import HttpsIcon from '@mui/icons-material/Https';
-
+import { Helmet } from 'react-helmet';
 
 const ChangePass = () => {
     const [showOldPass,setShowOldPass] = useState(false);
@@ -14,6 +14,9 @@ const ChangePass = () => {
     const [showConPass,setShowConPass] = useState(false);
   return (
     <div className='changePasswordPage'>
+        <Helmet>
+            <title>Change Password</title>
+        </Helmet>
     <form >
         <span className='heading'>Change Password</span>
 

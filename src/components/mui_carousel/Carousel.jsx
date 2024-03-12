@@ -21,7 +21,7 @@ const MuiCaousel = () => {
       <Carousel {...options}>
         {
           items.map((item,key)=>(
-            <div {...key} className='item' >
+            <div key={key} className='item' >
               <img src={item}/>
             </div>
           ))

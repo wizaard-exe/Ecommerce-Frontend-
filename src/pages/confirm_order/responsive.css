@@ -1,0 +1,121 @@
+@media(max-width:1024px){
+    .confirmOrder_page{
+        padding-top: 5vmax;
+        
+    }
+    .confirmOrder_page .confirmOrder_con{
+        margin-top:8vmax;
+        width: 80%;
+    }
+    .confirmOrder_con .heading{
+        font-size: 2vmax;
+        margin-bottom: 2.5;
+    }
+    .shippingInfo p,.paymentBox p{
+        font-size: 1.4vmax;
+    }   
+    .shippingInfo, .paymentBox{
+        font-size: 1.3vmax;
+    } 
+    .shippingInfoCon button{
+        font-size: 1.5vmax;
+    }
+    .confirmOrder_page button{
+        font-size: 1.1vmax;
+        padding: 0.9vmax 0vmax;
+    }
+    .cartCon .leftCon .imgCon{
+        width:45px;
+        height:40px;
+    }
+    .shippingInfoCon .cart{
+        font-size: 1.2vmax;
+    }
+}
+
+
+
+
+@media(max-width:768px)
+{
+    .confirmOrder_page{
+        padding-top: 5vmax;
+        gap: 1vmax;
+    }
+    .confirmOrder_page .confirmOrder_con{
+        width: 80%;
+        margin-top:6.5vmax;
+    }
+    .confirmOrder_con .heading{
+        font-size: 2.2vmax;
+    }
+    .shippingInfo p,.paymentBox p{
+        font-size: 1.4vmax;
+    }   
+    .shippingInfo, .paymentBox{
+        font-size: 1.4vmax;
+    } 
+    .shippingInfoCon .cart{
+
+        font-size:1.2vmax;
+    }
+    .cartCon .leftCon .imgCon{
+        width:40px;
+        height: 30px;
+    }
+    .shippingInfoCon button{
+        font-size: 1.1vmax;
+    }
+    .confirmOrder_page button{
+        font-size: 1.1vmax;
+        padding: 0.9vmax 0vmax;
+    }
+    .shippingInfoCon .shippingInfo div p {
+        width:30%;
+    }
+}
+@media(max-width:550px)
+{
+    .confirmOrder_page .confirmOrder_con
+    {
+        flex-direction: column-reverse;
+        gap: 5vmax;
+        width: 80%;
+    }
+    .confirmOrder_con .heading{
+        font-size: 1.9vmax;
+        margin-bottom:2vmax;
+        border-bottom: 1px solid rgb(198, 198, 198);
+        padding-bottom: 0.5vmax;
+    }
+    .confirmOrder_page .proceedToPayCon
+    {
+        padding: 0vmax;
+    }
+    .proceedToPayCon .paymentBox
+    {
+        width: 100%;
+    }
+    .confirmOrder_con .shippingInfoCon{
+        border:none; 
+        gap: 5vmax;
+    }
+    .shippingInfoCon .cartCon{
+        min-width: 100%;
+    }
+    .shippingInfoCon .shippingInfo div{
+        /* justify-content: s; */
+    }
+    .shippingInfoCon .shippingInfo p{
+        
+    }
+
+        
+}
+
+@media(max-width:350px){
+    .confirmOrder_page .confirmOrder_con
+    {
+        width: 90%;
+    }
+}

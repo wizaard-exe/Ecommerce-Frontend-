@@ -1,0 +1,81 @@
+.shippingProgressCon{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 5px;
+}
+.shippingProgressCon >*{
+    
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: relative;
+}
+.shippingProgressCon >*:last-child{
+    flex-grow: 0;
+}
+.shippingProgressCon .progress{
+    flex-grow: 1;
+    border-bottom:1px solid rgb(126, 126, 126);
+
+}
+.shippingProgressCon .progress.active{
+    border-bottom:1px solid rgb(48, 48, 48);
+}
+
+
+.shippingProgressCon .iconDiv
+{
+    display: flex;
+    align-items: center;
+}
+.shippingProgressCon .iconDiv .icons
+{
+    font-size: 1.5vmax;
+    color:rgb(122, 122, 122);
+}
+.shippingProgressCon .iconDiv .icons.active
+{
+    color:rgb(48, 48, 48);
+    color:#3d1902;
+}
+
+.shippingProgressCon .iconDiv .icons.mr{
+    margin-right: 6px;
+}
+.shippingProgressCon span{
+    position: absolute;
+    left: 0;
+    top:100%;
+    transform: translateX(-30%);
+    font-size: 0.8vmax;
+}
+
+@media(max-width:768px)
+{
+    .shippingProgressCon{
+        width: 80%;
+    }
+    .shippingProgressCon .iconDiv .icons
+    {
+        font-size: 2.8vmax;
+    }
+    .shippingProgressCon span{
+        font-size: 1.1vmax;
+    }
+}
+
+@media(max-width:500px)
+{
+    .shippingProgressCon{
+        width: 85%;
+    }
+    .shippingProgressCon .iconDiv .icons
+    {
+        font-size: 2vmax;
+
+    }
+    
+}

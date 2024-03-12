@@ -1,0 +1,165 @@
+.confirmOrder_page{
+    flex-grow: 1;
+    padding-top: 3vmax;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-color: #fff;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2vmax;
+}
+.confirmOrder_page a{
+    text-decoration: none;
+}
+
+.confirmOrder_page button{
+    border:none;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 2vmax;
+    text-decoration: none;
+    font-size: 0.8vmax;
+    cursor: pointer;
+    background-color: rgb(76, 76, 76);
+    color:#fff;
+    transition: 0.2s ease all;
+}
+.proceedToPayCon button:hover{
+    background-color: rgb(10, 10, 10);
+}
+
+.confirmOrder_page .confirmOrder_con
+{
+    margin: 0 auto;
+    margin-top: 8vmax;
+    width: 75%;
+    display: flex;
+    align-content: flex-start;    
+    min-height: 100%;
+    flex-grow: 1;
+}
+.shippingInfo p,.paymentBox p{
+    font-size: 0.9vmax;
+    font-weight: bold;
+    color:rgb(103, 103, 103);
+}   
+.shippingInfo, .paymentBox{
+    font-size: 0.9vmax;
+} 
+
+/* SHIPPING INFO CON */
+
+.confirmOrder_con .shippingInfoCon{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 5vmax;
+    border-right: 1px solid rgb(217, 217, 217);
+    min-height: 100%;
+    font-size: 0.8vmax;
+}
+.shippingInfoCon button{
+    font-size: 0.8vmax;
+    width: fit-content;
+    padding: 0.2vmax 0vmax;
+    background-color: transparent;
+    color:black;
+    text-decoration: underline;
+    margin-top: 1.2vmax;
+}
+.confirmOrder_con .heading{
+    font-size: 1.2vmax;
+    margin-bottom: 2vmax;
+    display: block;
+}
+.shippingInfoCon .shippingInfo,.shippingInfoCon .cartItems
+{
+    width: 100%;
+}
+.shippingInfoCon .shippingInfo div{
+    display: flex;
+    align-items: flex-start;
+    gap: 1vmax;
+    margin-top: 1.5vmax;
+}
+
+.shippingInfoCon .shippingInfo div p {
+    width:15%;
+}
+
+
+
+
+/* CART CON */
+.shippingInfoCon .cartCon{
+    min-width: 100%;
+
+}
+.shippingInfoCon .cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    font-size: 0.9vmax;
+    padding: 0.1vmax 1vmax;
+    padding-left: 0vmax;
+}
+.shippingInfoCon .cart:last-child{
+    border:none;
+}
+.cartCon .leftCon,.cartCon  .rightCon{
+
+    display: flex;
+    align-items: center;
+    gap: 1vmax;
+    padding: 0.5vmax 1vmax;
+    padding-left: 0vmax;
+}
+.cartCon  .rightCon{
+    display: flex;
+    font-size: 2vmax;
+    gap: 1vmax;
+    font-size: 0.9vmax;
+}
+.cartCon  .rightCon span{
+    font-weight: bold;
+    color:rgb(63, 63, 63);
+}
+
+
+.cartCon .leftCon .imgCon{
+    width:60px;
+    height: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.cartCon .leftCon .imgCon img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+
+/* SHIPPING INFO CON */
+.confirmOrder_con .proceedToPayCon
+{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding:0vmax 5vmax;
+    padding-top: 0px;
+}
+
+
+.paymentBox div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5vmax;
+    margin-top: 1.5vmax;
+}

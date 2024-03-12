@@ -1,0 +1,183 @@
+.deliveryAddressPage{
+    flex-grow: 1;
+    position: absolute;
+    top:0;left:0;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    padding-top: 2vmax;
+}
+.deliveryAddressPage .title{
+    font-size: 1.1vmax;
+    margin-top: 5vmax;
+}
+
+.deliveryAddressPage form
+{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 3vmax;
+}
+.deliveryAddressPage form >*{
+    margin-bottom: 2vmax;
+    width: 40%;
+    position: relative;
+}
+
+
+.deliveryAddressPage form input[type=submit]
+{
+    padding: 0.6vmax;
+    font-size: 0.8vmax;
+    cursor: pointer;
+    border: none;
+    outline: 1px solid  rgb(168, 168, 168);
+    transition: 0.15s ease all;
+    width: 100%;
+    background-color: rgb(78, 78, 78);
+    color:#fff;
+}
+.deliveryAddressPage form .selectBox
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8vmax;
+}
+.deliveryAddressPage form textarea{
+    border:none;
+    width: 100%;
+    outline: 1px solid rgb(155, 155, 155);
+    resize: none;
+    height: 100%;
+    padding: 0.5vmax;
+    font-size: 0.8vmax;
+}
+
+.deliveryAddressPage form p{
+    width: 50%;
+    font-size: 0.75vmax;
+}
+.deliveryAddressPage form select{
+    border:none;
+    width: 100%;
+    border-left: 1px solid grey;
+    outline: none;
+    padding: 0.4vmax;
+    height: 100%;
+    font-size: 0.8vmax;
+}
+.deliveryAddressPage form input[type=submit]:hover{
+    background-color: rgb(22, 22, 22);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; 
+  margin: 0;
+}
+
+
+.deliveryAddressPage form label .input{
+    width: 100%;
+    padding: 0.7vmax 3vmax;
+    font-size: 0.8vmax;
+    border:none;
+    outline: 1px solid rgb(123, 123, 123);
+}
+.deliveryAddressPage form label .icon{
+    position: absolute;
+    left: 0.6vmax;
+    top:50%;transform: translateY(-50%);
+    font-size: 1.5vmax;
+    color:rgb(113, 113, 113);
+}
+.deliveryAddressPage form label:nth-child(7)
+{
+    border:1px solid rgb(150, 150, 150);
+    padding-left: 1vmax;
+}
+
+
+
+@media(max-width:1440px)
+{
+    .deliveryAddressPage form
+    {
+        width: 75%;
+    }
+    
+    
+}
+@media(max-width:1024px)
+{
+    
+}
+@media(max-width:768px)
+{
+    .deliveryAddressPage form
+    {
+        width: 85%;
+    }
+    .deliveryAddressPage form >*{
+        width: 45%;
+    }
+    .deliveryAddressPage form label .input{
+        font-size:1.2vmax;
+        padding:1.1vmax 4.5vmax;
+    }
+    .deliveryAddressPage form label .icon{
+        font-size: 2.4vmax;
+        left: 1vmax;
+    }
+    .deliveryAddressPage form input[type=submit]
+    {
+        padding: 1.2vmax;
+        font-size: 1vmax;
+        letter-spacing: 1px;
+    }
+    
+    .deliveryAddressPage form>*
+    {
+        margin-top: 1vmax;
+    }
+    .deliveryAddressPage .title{
+        font-size: 1.4vmax;
+        margin-top: 6vmax;
+    }
+    .deliveryAddressPage form textarea{
+        font-size: 1.3vmax;
+        padding: 1vmax 1vmax;
+    }
+    .deliveryAddressPage form select{
+        font-size: 1.2vmax;
+    }
+    .deliveryAddressPage form p{
+        width: 45%;
+        font-size: 0.75vmax;
+    }
+    
+}
+@media(max-width:500px)
+{
+    .deliveryAddressPage form
+    {
+        width: 75%;
+    }
+    .deliveryAddressPage form >*{
+        width: 100%;
+    }
+}
+@media(max-width:300px)
+{
+    .deliveryAddressPage form
+    {
+        width: 85%;
+    }
+}

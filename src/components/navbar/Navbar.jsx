@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import './navbar.css';
 import './responsive.css';
 import { LuSearch } from "react-icons/lu";
@@ -12,10 +12,20 @@ import CloseIcon from '@mui/icons-material/Close';
 import FilterListOutlinedIcon from '@mui/icons-material/FilterListOutlined';
 import { RiLogoutCircleRLine } from "react-icons/ri";
 import { RiLogoutCircleLine } from "react-icons/ri";
-
-
+import { useNavigate } from 'react-router-dom';
+import {useDispatch,useSelector} from 'react-redux';
+import {updateSearchQuery } from "../../redux/reducer/searchquery_reducer.js";
+import toastOption from '../../utils/toastOption.js';
+import { toast} from 'react-toastify';
+import axios from 'axios';
+import { getUser } from '../../redux/action/auth_action.js';
 
 const Navbar = () => {
+    const {authenticated,user} = useSelector(state=>state.authentication);
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+    const [searchQuery,setSearchQuery] = useState("");
+
     const [toggleSidebar,setToggleSidebar] = useState(false);
     const stopPropogateSidebar = (e) =>{
         if(e.target.className === "sidebar")
@@ -23,7 +33,42 @@ const Navbar = () => {
             setToggleSidebar(false);
         }
     }
-    
+    const runSearchQuery = ()=>{
+        if(searchQuery.trim() !== "")
+        {
+            dispatch(updateSearchQuery({searchQuery}));
+            navigate(`/search?query=${searchQuery}`); 
+        }
+    }
+    const onKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            runSearchQuery();
+        }
+    };
+    const logoutUser = async () => {
+        const consent = window.confirm('You will be Logged out');
+        if(consent)
+        {
+
+     
+        try{
+            const {data} = await axios.post(`${import.meta.env.VITE_DOMAIN}/logout`,{},{withCredentials:true});
+            if(!data)
+            {
+                return toast.error("Error Occured", toastOption); 
+            }
+            toast.success("You have been logged out successfully.", toastOption); 
+            dispatch(getUser());
+            navigate("/");
+        }   
+        catch(e)
+        {
+            console.log(e);
+            toast.error(e.message, toastOption); 
+        }
+    }
+      };
+      
   return (
     <>
     <nav className='navbar'>
@@ -37,26 +82,29 @@ const Navbar = () => {
                 <h2><Link to="/">Super BuY</Link></h2>
             </div>
             <div className='searchBar'>
-                <input type="text" placeholder='Search for Products' />
-                <LuSearch className='searchIcon' />
+                <input type="text" placeholder='Search for Products Here' onKeyDown={onKeyPress} value={searchQuery} onChange={e=>setSearchQuery(e.target.value)}/>
+                <LuSearch className='searchIcon' onClick={runSearchQuery} />
             </div>
         </div>
 
         {/* RIGHT SIDE NAV */}
+
         <ul className="rightNav">
             <li><Link to="/search" >Search</Link></li>
             <li className='profileCon'>
                 <Link to="/profile"><LuUser2 className='navIcon' /></Link>
             </li>
             <li className='wishlistCon'>
-                <Link to="/wishlist"><IoMdHeartEmpty className='navIcon wIcon' /><span>1</span></Link>
+                <Link to="/wishlist"><IoMdHeartEmpty className='navIcon wIcon' />{user.wishlist && user.wishlist.length > 0 && <span>{user.wishlist.length}</span>}</Link>
                 
             </li>
             <li className='cartCon'>
-                <Link to="/cart"><BsCart2  className='navIcon' /><span>1</span></Link>
+                <Link to="/cart"><BsCart2  className='navIcon cicon ' />
+                {user.cart && user.cart.length > 0 && (<span>{user.cart.length}</span>)}
+                </Link>
             </li>
             <li className='cartCon'>
-                <Link to="/login"><button>Login</button></Link>
+                <Link to="/login">{authenticated ? (<button onClick={logoutUser}>Logout</button>) : (<button>Login</button>)}</Link>
             </li>
 
         </ul>

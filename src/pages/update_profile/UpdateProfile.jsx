@@ -4,6 +4,7 @@ import './responsive.css';
 import EmailOutlinedIcon from '@mui/icons-material/EmailOutlined';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 const UpdateProfile = () => {
     const [updateImg,setUpdateImg] = useState(null);
     const updateProfilePic = (e)=>
@@ -39,6 +40,9 @@ const UpdateProfile = () => {
     }
   return (
     <div className='updateProfilePage'>
+        <Helmet>
+            <title>Update Profile</title>
+        </Helmet>
         <form className="updateProfileCon">
             <span className='heading'>Update Profile</span>
             <label>
