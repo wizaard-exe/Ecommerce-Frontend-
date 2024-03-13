@@ -56,8 +56,6 @@ export const loginWithGoogle = (name,email,googleUid,profilePic) => async (dispa
             profilePic,
         }, 
         {withCredentials:true,headers: {'Content-Type': 'application/json'}});
-        console.log(data);
-
         dispatch(login_success({user:data.user}));
         
     } catch (e) {
@@ -75,6 +73,7 @@ export const getUser = ()=> async (dispatch) =>
     }
     catch(e)
     {
+        console.log(e);
         dispatch(login_fail({error:e.message}));
     }
 }

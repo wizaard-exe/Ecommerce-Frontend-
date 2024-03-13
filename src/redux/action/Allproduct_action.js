@@ -22,10 +22,6 @@ export const getAllproducts = (selectedOption, rangeSlider, rating, page,query,s
         const filterUrl = `page=${page}&&sortBy=${selectedOption}&&rating=${defaultRating}&&maxprice=${defaultRangeSlider}${query ? `&&query=${query}`: ""} ${categoryQueryString}${brandQueryString}`;
 
         const { data } = await axios.get(`${import.meta.env.VITE_DOMAIN}/products?${filterUrl}`);
-
-        // const { data } = await axios.get(`${import.meta.env.VITE_DOMAIN}/products?page=${page}&&sortBy=${selectedOption}&&rating=${defaultRating}&&maxprice=${defaultRangeSlider}${query ? `&&query=${query}`: ""} ${categoryQueryString} ${brandQueryString}`);
-
-            console.log(filterUrl)
         dispatch(getAllProduct_success({ data: data.product, total_products: data.totalProducts, limit: data.limit,maxPrice:data.maxPrice }));
     } catch (e) {
         dispatch(getAllProduct_fail({ error: e.message }));

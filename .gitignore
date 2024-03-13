@@ -25,4 +25,4 @@ dist-ssr
 
 # Exclude .env file
 .env
-.gitignore
+

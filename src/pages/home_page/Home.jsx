@@ -24,7 +24,7 @@ const [error,setError] = useState(null);
 const getData = async () => {
   try {
     setLoading(true);
-    const { data } = await axios.get("http://localhost:4000/api/v1/products",{withCredentials:true});
+    const { data } = await axios.get(`${import.meta.env.VITE_DOMAIN}/products`);
     if (data.product) {
       setProducts(data.product);
       setLoading(false);
