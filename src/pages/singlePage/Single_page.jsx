@@ -34,7 +34,7 @@ const SinglePage = () => {
       {
         toast.dismiss();
         toast.success(data.message,toastOption);
-        dispatch(getUser())
+        dispatch(getUser());
       }
     }
     catch(e)
