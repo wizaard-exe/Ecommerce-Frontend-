@@ -52,6 +52,7 @@
     width: 100%;  
     transition: 0.9s ease all;
     padding: 0vmax 2vmax;
+    aspect-ratio: 1;
 
 }
 

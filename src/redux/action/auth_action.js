@@ -28,7 +28,7 @@ export const signUp = (name, email, password, confirmPassword, profilePic) => as
         return { success: false, error: e.response.data.message };
     }
 };
-toast.error("sdf",toastOption);
+
 
 export const login = (email,password) => async (dispatch) =>
 {

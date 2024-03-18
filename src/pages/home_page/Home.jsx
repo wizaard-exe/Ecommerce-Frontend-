@@ -30,7 +30,9 @@ const getData = async () => {
       setLoading(false);
       setError(null);
     }
-  } catch (e) {
+  } catch (e)
+  {
+    toast.dismiss();
     toast.error(e.message, toastOption);
     setLoading(false); 
     setError(e);
@@ -47,6 +49,7 @@ useEffect(() => {
           <title>SuperBuy Online Shopping</title>
       </Helmet>
       <Carousel />
+
       <div className='homeSection'>
           <h2>Latest Products</h2>
               <div className='productCon'>
@@ -57,12 +60,10 @@ useEffect(() => {
                 }
               </div>
     
- 
-
           <h2>Upcoming Products</h2>
           <div className='productCon'>
             
-              {loading ? <Loader /> : products.length > 0 && products.slice(0,4).map((product,key) => (
+              {loading ? <Loader />: products.length > 0 && products.slice(0,4).map((product,key) => (
                   <Product key={key} {...product} />
               ))}
           </div>

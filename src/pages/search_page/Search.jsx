@@ -19,6 +19,9 @@ import {getAllproducts } from "../../redux/action/Allproduct_action.js";
 import {toast} from 'react-toastify';
 import toastOptions from '../../utils/toastOption.js';
 import axios from 'axios';
+import Loader from '../../components/loader/loader';
+
+
 
 const Search = () => {
   const dispatch = useDispatch();
@@ -38,7 +41,7 @@ const Search = () => {
   const [selectedCategory,setSelectedCategory] = useState([]);
   const [selectedBrand,setSelectedBrand] = useState([]);
 
-  
+
 
   useEffect(()=>{
     dispatch(getAllproducts(selectedOption,rangeSlider,rating,page,searchQuery,selectedCategory,selectedBrand));
@@ -74,6 +77,7 @@ const Search = () => {
       }
       catch(e)
       {
+        toast.dismiss();
         toast.error(e.message,toastOptions);
       }
     }
@@ -85,7 +89,8 @@ const Search = () => {
       <Helmet>
           <title>Search Product Here</title>
       </Helmet>
-      <div className='searchPage'>
+      {loading ? <div className='loaderDiv'><Loader /></div> : 
+      (<div className='searchPage'>
           <div className={`leftSide ${filterSidebar ? "move" : ""}`} >
 
               <span className='filterTitle'>Filter </span>
@@ -130,8 +135,6 @@ const Search = () => {
                 <input type="range" min="0" max={sliderMaxValue} step="10000" style={{ "--slider-value":rangeSlider,"--slider-max-value":sliderMaxValue}} value={rangeSlider} onChange={(e)=>setRangeSlider(e.target.value)}/>
               </div>
           </div>
-  {/* 
-          Right Side */}
 
           <div className="rightSide">
 
@@ -174,7 +177,9 @@ const Search = () => {
 
 
           
-      </div>
+      </div>)}
+
+
       <Footer />
     </div>
   )

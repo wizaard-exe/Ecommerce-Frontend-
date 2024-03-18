@@ -1,7 +1,9 @@
+
 .homePage{
     padding-top: 2vmax;
     width: 100%;
     background-color: #fff;
+    flex-grow: 1;
 }
 .homeSection{
     margin-top: 2vmax;
